@@ -19,7 +19,7 @@ def compare_input
   # If the user's input matches the random number: You guessed the correct number!
   if user_input == random_number
     puts "You guessed the correct number!"
-    return random_number
+    return "random_number"
   # It the user's input is equal to "exit": Goodbye!
   elsif user_input == "exit"
     puts "Goodbye!"
@@ -30,6 +30,7 @@ def compare_input
     return random_number
   else
     puts "Please enter a valid input"
+    return 1
   end
 end
 # Print out one of three statements:
