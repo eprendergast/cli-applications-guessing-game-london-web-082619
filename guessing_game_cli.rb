@@ -1,14 +1,17 @@
 # Code your solution here!
 
 def guessing_game_cli
-  puts "User Input:"
-  input = gets.chomp
+  random_number = rand(1..6) # Generate and store a random number between 1 and 6
+  puts "Welcome! Please guess a number betweek 1-6:" # Prompts the user to guess their own number between 1 and 6
+  user_guess = gets.chomp # Capture user input from the command line
+  
+  
 end
 #
 guessing_game_cli
-# Generate and store a random number between 1 and 6
-# Prompts the user to guess their own number between 1 and 6
-# Capture user input from the command line
+
+
+
 # Compare that input to the random number that has been generated
 # Print out one of three statements:
     # If the user's input matches the random number: You guessed the correct number!
