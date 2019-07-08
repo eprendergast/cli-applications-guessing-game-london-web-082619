@@ -15,7 +15,7 @@ def get_input
 end
 
 # Compare that input to the random number that has been generated
-def compare_input
+def compare_input (random_number, user_input)
   # If the user's input matches the random number: You guessed the correct number!
   if user_input == random_number
     puts "You guessed the correct number!"
@@ -36,6 +36,9 @@ end
 # Print out one of three statements:
 
 def run_guessing_game
-
+  random_number = generate_number
+  prompt_user
+  user_input = get_input
+  compare_input (random_number, user_input)
 end
 #
