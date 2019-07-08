@@ -28,7 +28,7 @@ def compare_input
   elsif user_input != random_number
     puts "Sorry! The computer guessed #{random_number}."
     return random_number
-  else 
+  else
     puts "Please enter a valid input"
   end
 end
