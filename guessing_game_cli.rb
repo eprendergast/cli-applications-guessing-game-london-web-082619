@@ -9,14 +9,10 @@ def guessing_game_cli
   if user_input == random_number # If the user's input matches the random number: You guessed the correct number!
     puts "You guessed the correct number!"
   elsif user_input == "exit"  # It the user's input is equal to "exit": Goodbye!
-    puts "Goodbye!"  
+    puts "Goodbye!"
   else # If the user's input DOES NOT matches the random number: Sorry! The computer guessed <number>.
     puts "Sorry! The computer guessed #{random_number}."
   end
 
 end
 #
-
-
-
-
