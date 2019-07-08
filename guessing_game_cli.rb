@@ -42,3 +42,4 @@ def run_guessing_game
   compare_input (random_number, user_input)
 end
 #
+run_guessing_game
