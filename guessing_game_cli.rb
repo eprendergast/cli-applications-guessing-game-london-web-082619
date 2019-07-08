@@ -1,12 +1,4 @@
 
-
-# Capture user input from the command line
-# Compare that input to the random number that has been generated
-# Print out one of three statements:
-    # If the user's input matches the random number: You guessed the correct number!
-    # If the user's input DOES NOT matches the random number: Sorry! The computer guessed <number>.
-    # It the user's input is equal to "exit": Goodbye!
-
 # Generate and store a random number between 1 and 6
 def generate_number
   random_number = rand(1..6)
@@ -17,9 +9,31 @@ def prompt_user
   puts "Please enter a number between 1-6"
 end
 
+# Capture user input from the command line
 def get_input
   user_input = gets.chomp
 end
+
+# Compare that input to the random number that has been generated
+
+def compare_input
+  # If the user's input matches the random number: You guessed the correct number!
+  if user_input == random_number
+    puts "You guessed the correct number!"
+  # It the user's input is equal to "exit": Goodbye!
+  elsif user_input == "exit"
+    puts "Goodbye!"
+  # If the user's input DOES NOT matches the random number: 
+  elsif user_input != random_number
+    puts "Sorry! The computer guessed #{random_number}."
+  end
+end
+# Print out one of three statements:
+  
+    
+    
+
+
 
 def run_guessing_game
 
