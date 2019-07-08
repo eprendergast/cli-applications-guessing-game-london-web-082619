@@ -8,7 +8,7 @@ def guessing_game_cli
     puts "You guessed the correct number!"
   elsif user_input == "exit"
     puts "Goodbye!"
-  else 
+  else
     puts "Sorry! The computer guessed #{random_number}."
   end
 
