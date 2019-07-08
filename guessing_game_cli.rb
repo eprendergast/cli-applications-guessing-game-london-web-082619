@@ -33,7 +33,6 @@ def compare_input (random_number, user_input)
     return 1
   end
 end
-# Print out one of three statements:
 
 def run_guessing_game
   random_number = generate_number
@@ -41,5 +40,4 @@ def run_guessing_game
   user_input = get_input
   compare_input(random_number, user_input)
 end
-#
-run_guessing_game
+
