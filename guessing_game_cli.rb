@@ -40,4 +40,3 @@ def run_guessing_game
   user_input = get_input
   compare_input(random_number, user_input)
 end
-
