@@ -1,7 +1,7 @@
 # Code your solution here!
 
 def guessing_game_cli
-
+  puts "User Input:"
   gets.chomp
 end
 
