@@ -39,7 +39,7 @@ def run_guessing_game
   random_number = generate_number
   prompt_user
   user_input = get_input
-  compare_input (random_number, user_input)
+  compare_input(random_number, user_input)
 end
 #
 run_guessing_game
