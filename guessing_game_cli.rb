@@ -15,17 +15,21 @@ def get_input
 end
 
 # Compare that input to the random number that has been generated
-
 def compare_input
   # If the user's input matches the random number: You guessed the correct number!
   if user_input == random_number
     puts "You guessed the correct number!"
+    return random_number
   # It the user's input is equal to "exit": Goodbye!
   elsif user_input == "exit"
     puts "Goodbye!"
+    return exit
   # If the user's input DOES NOT matches the random number:
   elsif user_input != random_number
     puts "Sorry! The computer guessed #{random_number}."
+    return random_number
+  else 
+    puts "Please enter a valid input"
   end
 end
 # Print out one of three statements:
