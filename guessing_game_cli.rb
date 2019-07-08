@@ -2,7 +2,7 @@
 
 def guessing_game_cli
   puts "User Input:"
-  gets.chomp
+  input = gets.chomp
 end
 
 # Generate and store a random number between 1 and 6
