@@ -4,8 +4,8 @@ def guessing_game_cli
   random_number = rand(1..6) # Generate and store a random number between 1 and 6
   puts "Welcome! Please guess a number betweek 1-6:" # Prompts the user to guess their own number between 1 and 6
   user_guess = gets.chomp # Capture user input from the command line
-  
-  
+
+
 end
 #
 guessing_game_cli
