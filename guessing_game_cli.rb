@@ -3,8 +3,14 @@
 def guessing_game_cli
   random_number = rand(1..6) # Generate and store a random number between 1 and 6
   puts "Welcome! Please guess a number betweek 1-6:" # Prompts the user to guess their own number between 1 and 6
-  user_guess = gets.chomp # Capture user input from the command line
-
+  user_input = gets.chomp # Capture user input from the command line
+  if user_input == random_number
+    puts "You guessed the correct number!"
+  elsif user_input == "exit"
+    puts "Goodbye!"
+  else 
+    puts "Sorry! The computer guessed #{random_number}."
+  end
 
 end
 #
