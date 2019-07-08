@@ -30,11 +30,6 @@ def compare_input
 end
 # Print out one of three statements:
 
-
-
-
-
-
 def run_guessing_game
 
 end
