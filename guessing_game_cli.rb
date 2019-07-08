@@ -23,15 +23,15 @@ def compare_input
   # It the user's input is equal to "exit": Goodbye!
   elsif user_input == "exit"
     puts "Goodbye!"
-  # If the user's input DOES NOT matches the random number: 
+  # If the user's input DOES NOT matches the random number:
   elsif user_input != random_number
     puts "Sorry! The computer guessed #{random_number}."
   end
 end
 # Print out one of three statements:
-  
-    
-    
+
+
+
 
 
 
